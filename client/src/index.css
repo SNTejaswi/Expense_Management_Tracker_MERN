@@ -1,0 +1,221 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+.content {
+  height:80vh;/* takes up remaining space */
+}
+.navbar{
+  background-color: rgb(68, 68, 185);
+}
+.register-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+.filters{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 150x 20px;
+  box-shadow: 0 0 3px grey;
+}
+.switch-icons{
+  border: 1px solid rgba(0,0,0,0.677);
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.anticon svg{
+  font-size: 20px;
+  cursor:pointer;
+}
+.active-icon{
+  color: black;
+}
+.inactive-icon{
+  color: grey;
+}
+/* === Center heading and adjust Logout === */
+.header-container {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.header-container h1 {
+  font-size: 2rem;
+  color: #2563eb;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* Logout button aligned right below heading */
+.header-container .logout-btn {
+  position: absolute;
+  right: 40px;
+  top: 100%;
+  transform: translateY(10px);
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.header-container .logout-btn:hover {
+  background-color: #1e40af;
+}
+
+/* === Controls section (Select Frequency, Select Type, Icons, Add New) === */
+.controls {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 2px solid #ccc;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.controls select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+/* icons */
+.controls .icon {
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.controls .icon:hover {
+  color: #2563eb;
+}
+
+/* Add New button */
+.controls .add-btn {
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.controls .add-btn:hover {
+  background-color: #15803d;
+}
+/* Full-page background */
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Glass card container */
+.register-page .ant-form {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 50px 40px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 400px;
+  color: #fff;
+  animation: fadeIn 1s ease;
+}
+
+/* Heading */
+.register-page h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+/* Labels */
+.register-page .ant-form-item-label > label {
+  color: #f0f0f0;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* Inputs */
+.register-page .ant-input {
+  border-radius: 12px;
+  height: 45px;
+  border: none;
+  background: rgba(255,255,255,0.25);
+  color: #fff;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.register-page .ant-input:hover, 
+.register-page .ant-input:focus {
+  background: rgba(255,255,255,0.35);
+  transform: scale(1.02);
+}
+
+/* Button */
+.register-page .btn-primary {
+  background: linear-gradient(135deg, #6b73ff, #000dff);
+  border: none;
+  border-radius: 12px;
+  padding: 10px 25px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.register-page .btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Links */
+.register-page a {
+  color: #ffd700;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.register-page a:hover {
+  color: #ffea00;
+  text-decoration: underline;
+}
+
+/* Flex container for link + button */
+.register-page .d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
