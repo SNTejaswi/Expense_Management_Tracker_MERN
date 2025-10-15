@@ -1,0 +1,26 @@
+{
+  "name": "expense-management-app",
+  "version": "1.0.0",
+  "description": "Expense Tracker App",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm start\"npm run client \" "
+  },
+  "keywords": [],
+  "author": "S N TEJASWI",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "moment": "^2.30.1",
+    "mongoose": "^8.19.1",
+    "morgan": "^1.10.1"
+  }
+}
